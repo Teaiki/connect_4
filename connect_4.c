@@ -291,7 +291,6 @@ int main(int argc, char **argv)
   char *jou_koi;
   int winner;
   
-  // remplissage initial de la grille
   game_grid = initialized_grid();
   
   jou_koi = malloc(2 * sizeof(char));
@@ -319,5 +318,5 @@ int main(int argc, char **argv)
   message_winner(winner);
 
   free_arrays(game_grid, jou_koi);
-  return(0);
+  return 0;
 }
